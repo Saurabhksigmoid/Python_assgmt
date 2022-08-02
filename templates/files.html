@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>File Operation in S3</title>
+  </head>
+  <body>
+    <div class="content">
+        <h3 align ='center'>Bucket display</h3>
+        <ul>
+          {% for item in contents %}
+            <li>
+              <a href="/bucket/{{item}}"> {{item}} </a>
+            </li>
+          {% endfor %}
